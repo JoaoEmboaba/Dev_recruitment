@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="Implementação dos primeiros testes do controller" />
+    <list default="true" id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="Implementação dos primeiros testes do controller">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,11 +73,12 @@
     "ToolWindowRun.ShowToolbar": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/workspace/godev-maio-2023-testes/library-management",
+    "git-widget-placeholder": "discover",
+    "last_opened_file_path": "C:/Temp/ws-intellij/Dev_recruitment",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,20 +98,7 @@
       <recent name="com.senior.devrecruitment.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DevRecruitmentApplication">
-    <configuration name="DevRecruitmentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.DevRecruitmentApplication" />
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato">
     <configuration name="CandidatoRepositoryTest.findTecnologiasByIdCandidato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev_recruitment" />
       <extension name="coverage">
@@ -120,38 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CandidatoServiceJTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.CandidatoServiceJTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidatoServiceJTest.testeCenario01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.CandidatoServiceJTest" />
-      <option name="METHOD_NAME" value="testeCenario01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidatoServiceMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandidatoServiceMockTest.testeCenario02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev_recruitment" />
       <extension name="coverage">
         <pattern>
@@ -161,25 +125,74 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
       <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testeCenario02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoServiceMockTest.testeCenario04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoServiceMockTest.testeCenario05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidaturaServiceMockTest.testeCenario001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidaturaServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario001" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DevRecruitmentApplication" />
+      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario02" />
+      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario04" />
+      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario05" />
+      <item itemvalue="JUnit.CandidaturaServiceMockTest.testeCenario001" />
       <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
-      <item itemvalue="JUnit.CandidatoServiceJTest" />
-      <item itemvalue="JUnit.CandidatoServiceJTest.testeCenario01" />
-      <item itemvalue="JUnit.CandidatoServiceMockTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DevRecruitmentApplication" />
         <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
-        <item itemvalue="JUnit.CandidatoServiceJTest" />
-        <item itemvalue="JUnit.CandidatoServiceJTest.testeCenario01" />
-        <item itemvalue="JUnit.CandidatoServiceMockTest" />
+        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario04" />
+        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario05" />
+        <item itemvalue="JUnit.CandidaturaServiceMockTest.testeCenario001" />
+        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario02" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +301,38 @@
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java</url>
+          <line>40</line>
+          <properties class="com.senior.devrecruitment.service.mock.CandidaturaServiceMockTest" method="testeCenario001">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidaturaService.java</url>
+          <line>30</line>
+          <properties class="com.senior.devrecruitment.service.CandidaturaService" method="realizarCandidatura">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidatoService.java</url>
+          <line>46</line>
+          <properties class="com.senior.devrecruitment.service.CandidatoService" method="verificarSeCandidatoEstaInativo">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -295,6 +340,7 @@
         <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato" memberName="tecnologiasCandidatoes" />
         <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato$MockitoMock$1664469496" memberName="idCandidato" />
         <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato$MockitoMock$490860770" memberName="idCandidato" />
+        <PinnedItemInfo parentTag="java.util.Optional" memberName="value" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>

@@ -12,6 +12,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -32,15 +34,14 @@ public class CandidatoServiceMockTest {
     private CandidatoService candidatoService;
     @Mock
     private CandidatoRepository candidatoRepository;
+    @Captor
+    ArgumentCaptor<Candidato> candidatoCaptor;
+
     private Candidato candidato;
 
     @Test
-    @MockitoSettings(strictness = Strictness.LENIENT)
     @DisplayName("NOK - Teste com os UUID's diferentes, retornando a NotFoundException")
     void testeCenario01() {
-        candidato = new Candidato();
-        candidato.setIdCandidato(UUID.fromString("508b0552-131b-4dd1-b515-ecde13c64e48"));
-        when(candidatoRepository.findById(candidato.getIdCandidato())).thenReturn(Optional.of(candidato));
         assertThat(catchThrowable(() -> candidatoService.verificarSeCandidatoEstaInativo(UUID.fromString("508b0552-131b-4dd1-b514-ecde13c64e48"))))
                 .isInstanceOf(NotFoundException.class);
     }
@@ -72,10 +73,10 @@ public class CandidatoServiceMockTest {
         when(candidatoRepository.findById(candidato.getIdCandidato())).thenReturn(Optional.of(candidato));
         candidatoService.inativarPorId(candidato.getIdCandidato());
         assertThat(candidato.isAtivo()).isFalse();
+        verify(candidatoRepository).save(candidatoCaptor.capture());
     }
 
     @Test
-    @MockitoSettings(strictness = Strictness.LENIENT)
     @DisplayName("OK - Teste para verificar se o usuário é excluído corretamente")
     void testeCenario05(){
         candidato = new Candidato();

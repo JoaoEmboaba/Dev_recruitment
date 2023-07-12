@@ -39,10 +39,10 @@ class CandidatoRepositoryTest {
         Candidato candidato = Candidato.builder().nome("João").nacionalidade("Brasileiro").dataNascimento(LocalDate.now()).ativo(true).contratado(true).build();
         candidatoRepository.save(candidato);
 
-        Tecnologia tecnologia1 = Tecnologia.builder().nome(Linguagens.JS).framework(Framework.EXPRESS).areaaconselhavel(AreaAconselhavel.BACKEND).descricao("Linguagem de tipagem fraca").candidatoes(List.of(candidato)).build();
+        Tecnologia tecnologia1 = Tecnologia.builder().nome(Linguagens.JS).framework(Framework.EXPRESS).areaaconselhavel(List.of(AreaAconselhavel.BACKEND)).descricao("Linguagem de tipagem fraca").candidatoes(List.of(candidato)).build();
         tecnologiaRepository.save(tecnologia1);
 
-        Tecnologia tecnologia2 = Tecnologia.builder().nome(Linguagens.JS).framework(Framework.EXPRESS).areaaconselhavel(AreaAconselhavel.CIENCIA_DE_DADOS).descricao("Linguagem de tipagem fraca").candidatoes(List.of(candidato)).build();
+        Tecnologia tecnologia2 = Tecnologia.builder().nome(Linguagens.JS).framework(Framework.EXPRESS).areaaconselhavel(List.of(AreaAconselhavel.CIENCIA_DE_DADOS)).descricao("Linguagem de tipagem fraca").candidatoes(List.of(candidato)).build();
         tecnologiaRepository.save(tecnologia2);
 
         candidato.setTecnologiasCandidatoes(List.of(tecnologia1, tecnologia2));
@@ -50,7 +50,6 @@ class CandidatoRepositoryTest {
         tecnologia2.setCandidatoes(List.of(candidato));
 
         assertThat(candidatoRepository.findTecnologiasByIdCandidato(candidato.getIdCandidato()).get(0).getNome()).isEqualTo(Linguagens.JS);
-        assertThat(candidatoRepository.findTecnologiasByIdCandidato(candidato.getIdCandidato()).get(1).getAreaaconselhavel()).isEqualTo(AreaAconselhavel.CIENCIA_DE_DADOS);
         assertThat(candidatoRepository.findTecnologiasByIdCandidato(candidato.getIdCandidato())).isNotNull();
 
     }

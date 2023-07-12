@@ -13,6 +13,7 @@ import java.util.UUID;
 @Table(name = "vaga")
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id_vaga")

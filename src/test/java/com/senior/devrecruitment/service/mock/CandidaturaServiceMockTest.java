@@ -37,15 +37,21 @@ public class CandidaturaServiceMockTest {
     private Vaga vaga;
 
     @Test
-    @DisplayName("")
-    void testeCenario01(){
-        candidatura = new Candidatura();
+    @DisplayName("Testando a assertividade com o argument captor no teste do service de realização da candidatura")
+    void testeCenario001(){
+
         candidato = new Candidato();
-        vaga = new Vaga();
         candidato.setIdCandidato(UUID.fromString("55ed20d0-1a6c-11ee-be56-0242ac120002"));
+        vaga = new Vaga();
         vaga.setIdVaga(UUID.fromString("7b198538-1a6c-11ee-be56-0242ac120002"));
+
+//        when(candidatoRepository.findById(candidato.getIdCandidato())).thenReturn(Optional.of(candidato));
+//        when(vagaRepository.findById(vaga.getIdVaga())).thenReturn(Optional.of(vaga));
+
         candidaturaService.realizarCandidatura(candidato.getIdCandidato(), vaga.getIdVaga());
+
         when(candidaturaRepository.findById(candidatura.getId_candidatura())).thenReturn(Optional.of(candidatura));
+
         verify(candidaturaRepository).findById(candidatura.getId_candidatura());
         verify(candidatoRepository).findById(candidato.getIdCandidato());
         verify(vagaRepository).findById(vaga.getIdVaga());

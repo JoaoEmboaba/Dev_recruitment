@@ -4,7 +4,7 @@ import com.senior.devrecruitment.enums.AreaAconselhavel;
 import com.senior.devrecruitment.enums.Framework;
 import com.senior.devrecruitment.enums.Linguagens;
 
-import java.util.UUID;
+import java.util.List;
 
 public interface TecnologiaProjection {
 
@@ -13,7 +13,7 @@ public interface TecnologiaProjection {
 
     Framework getFramework();
 
-    AreaAconselhavel getAreaaconselhavel();
+    List<AreaAconselhavel> getAreaaconselhavel();
 
     String getDescricao();
 }
