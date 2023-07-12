@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="Implementação dos primeiros testes do controller" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2395b6eb-f388-4361-8de4-6ad6dadc33f4" />
+        <option name="url" value="https://github.com/JoaoVitor83/dev_recruitment.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RU22BLejKDp1jvccD7dUSuY9AY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/workspace/godev-maio-2023-testes/library-management",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\godev-maio-2023\Dev recruitment\src\main\resources" />
+      <recent name="C:\Users\joao.emboaba\Documents\dev_recruitment\src\main\resources\db\migration" />
+      <recent name="C:\Users\joao.emboaba\Documents\dev_recruitment\src\main\resources\db\migrations" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.senior.devrecruitment.repository" />
+      <recent name="com.senior.devrecruitment.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DevRecruitmentApplication">
+    <configuration name="DevRecruitmentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.DevRecruitmentApplication" />
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoRepositoryTest.findTecnologiasByIdCandidato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.repository.CandidatoRepositoryTest" />
+      <option name="METHOD_NAME" value="findTecnologiasByIdCandidato" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoServiceJTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.CandidatoServiceJTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoServiceJTest.testeCenario01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.CandidatoServiceJTest" />
+      <option name="METHOD_NAME" value="testeCenario01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidatoServiceMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DevRecruitmentApplication" />
+      <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
+      <item itemvalue="JUnit.CandidatoServiceJTest" />
+      <item itemvalue="JUnit.CandidatoServiceJTest.testeCenario01" />
+      <item itemvalue="JUnit.CandidatoServiceMockTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DevRecruitmentApplication" />
+        <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
+        <item itemvalue="JUnit.CandidatoServiceJTest" />
+        <item itemvalue="JUnit.CandidatoServiceJTest.testeCenario01" />
+        <item itemvalue="JUnit.CandidatoServiceMockTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="" />
+      <created>1687290130933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687290130933</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Adição dos arquivos inicias e inicio da criação das &#10;entidades e seus relacionamentos">
+      <created>1687292473846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687292473846</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adição dos arquivos inicias e inserção das criação das &#10;entidades e seus relacionamentos">
+      <created>1687292913814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687292913814</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Criação das migrations do flyway e implementação dos relacionamentos utilizando o JPA">
+      <created>1687367251318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687367251319</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementação dos métodos posts das entidades independentes, realizando a inserção na camada service e controller">
+      <created>1687379643395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687379643395</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Configurando o properties">
+      <created>1687379660732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687379660732</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Realizando os relacionamentos e configurando a camada service e controller para popular as tabelas intermediárias">
+      <created>1687470671515</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687470671515</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Otimizando algumas importações e padronizando os arquivos com CamelCase">
+      <created>1687471190148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687471190148</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Renomeando os pacotes para o padrão Java e implementando o tratamento de exceções de erros HTTP">
+      <created>1687473053690</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687473053691</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implementando o método de listar candidatos">
+      <created>1687475777724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687475777725</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implementação dos primeiros testes do controller">
+      <created>1688146361253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688146361253</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Adição dos arquivos inicias e inicio da criação das &#10;entidades e seus relacionamentos" />
+    <MESSAGE value="Adição dos arquivos inicias e inserção das criação das &#10;entidades e seus relacionamentos" />
+    <MESSAGE value="Criação das migrations do flyway e implementação dos relacionamentos utilizando o JPA" />
+    <MESSAGE value="Implementação dos métodos posts das entidades independentes, realizando a inserção na camada service e controller" />
+    <MESSAGE value="Configurando o properties" />
+    <MESSAGE value="Realizando os relacionamentos e configurando a camada service e controller para popular as tabelas intermediárias" />
+    <MESSAGE value="Otimizando algumas importações e padronizando os arquivos com CamelCase" />
+    <MESSAGE value="Renomeando os pacotes para o padrão Java e implementando o tratamento de exceções de erros HTTP" />
+    <MESSAGE value="Implementando o método de listar candidatos" />
+    <MESSAGE value="Implementação dos primeiros testes do controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação dos primeiros testes do controller" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato" memberName="tecnologiasCandidatoes" />
+        <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato$MockitoMock$1664469496" memberName="idCandidato" />
+        <PinnedItemInfo parentTag="com.senior.devrecruitment.entities.candidato.Candidato$MockitoMock$490860770" memberName="idCandidato" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((String[])args)[0].hashIsZero" custom="java.lang.String[]" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

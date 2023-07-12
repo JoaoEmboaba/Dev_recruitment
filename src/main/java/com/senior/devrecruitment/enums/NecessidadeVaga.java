@@ -1,0 +1,7 @@
+package com.senior.devrecruitment.enums;
+
+public enum NecessidadeVaga {
+
+    DESENVOLVIMENTO_WEB, DESKTOP, DESENVOLVIMENTO_DESKTOP, BACKEND, FRONTEND, FULL_STACK, MOBILE,
+    CYBERSECURITY, BIGDATA, IA, DEVOPS, CIENCIA_DE_DADOS;
+}
