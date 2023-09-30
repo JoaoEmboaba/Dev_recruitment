@@ -5,12 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="Implementação dos primeiros testes do controller">
+      <change afterPath="$PROJECT_DIR$/.idea/Dev_recruitment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev_recruitment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V20230930004845__create-tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidateEntityRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/CandidateEntityServiceJTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidacyEntityServiceMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidacyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/TecnologiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/TechnologyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/VagaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/VacancyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/Candidato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/DTO/DTOCandidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/DTO/DTOListagemCandidatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOListCandidates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidatura/Candidatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidatura/DTO/DTOCandidatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/DTO/DTOCandidacy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/DTO/DTOListagemTecnologia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOListTechnologies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/DTO/DTOTecnologia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOTechnology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/Tecnologia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/DTO/DTOListagemVagas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOListVacancies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/DTO/DTOVaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOVacancy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/AreaAconselhavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Linguagens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/NecessidadeVaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/PerformanceArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/DTOErros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/Exceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/NotCompatibleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/CandidaturaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyProjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyProjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/CandidatoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/CandidaturaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/TecnologiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/VagaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidatoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidaturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/TecnologiaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/VagaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create-tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/controller/CandidatoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/controller/CandidateEntityControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/CandidatoServiceJTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidateEntityServiceMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/DevRecruitmentApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidatoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidaturaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/TecnologiaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/VagaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/Candidato$CandidatoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/Candidato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/DTO/DTOCandidato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/DTO/DTOListagemCandidatos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/Candidatura$CandidaturaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/Candidatura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/DTO/DTOCandidatura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/DTO/DTOListagemTecnologia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/DTO/DTOTecnologia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/Tecnologia$TecnologiaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/Tecnologia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/DTO/DTOListagemVagas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/DTO/DTOVaga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/Vaga$VagaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/Vaga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/AreaAconselhavel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/Framework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/Linguagens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/NecessidadeVaga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/DTOErroValidacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/Exceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/NotCompatibleException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/projection/CandidaturaProjection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/projection/TecnologiaProjection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/CandidatoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/CandidaturaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/TecnologiaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/VagaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/security/DTOToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/CandidatoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/CandidaturaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/TecnologiaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/VagaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create-tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/DevRecruitmentApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/controller/CandidatoControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/repository/CandidatoRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/CandidatoServiceJTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +114,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -54,10 +148,12 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2RU22BLejKDp1jvccD7dUSuY9AY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,21 +162,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "discover",
-    "last_opened_file_path": "C:/Temp/ws-intellij/Dev_recruitment",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;discover&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/Dev_recruitment&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\godev-maio-2023\Dev recruitment\src\main\resources" />
@@ -98,24 +196,15 @@
       <recent name="com.senior.devrecruitment.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato">
-    <configuration name="CandidatoRepositoryTest.findTecnologiasByIdCandidato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.RunApplication">
+    <configuration name="RunApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.DevRecruitmentApplication" />
       <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.repository.CandidatoRepositoryTest" />
-      <option name="METHOD_NAME" value="findTecnologiasByIdCandidato" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CandidatoServiceMockTest.testeCenario02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandidacyEntityServiceMockTest.testeCenario001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev_recruitment" />
       <extension name="coverage">
         <pattern>
@@ -124,75 +213,92 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
-      <option name="METHOD_NAME" value="testeCenario02" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidatoServiceMockTest.testeCenario04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
-      <option name="METHOD_NAME" value="testeCenario04" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidatoServiceMockTest.testeCenario05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidatoServiceMockTest" />
-      <option name="METHOD_NAME" value="testeCenario05" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidaturaServiceMockTest.testeCenario001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev_recruitment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidaturaServiceMockTest" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidacyEntityServiceMockTest" />
       <option name="METHOD_NAME" value="testeCenario001" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CandidateEntityRepositoryTest.findTecnologiasByIdCandidato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.entities.technology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.repository.CandidateEntityRepositoryTest" />
+      <option name="METHOD_NAME" value="findTecnologiasByIdCandidato" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidateEntityServiceMockTest.testeCenario02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidateEntityServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidateEntityServiceMockTest.testeCenario04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidateEntityServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidateEntityServiceMockTest.testeCenario05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev_recruitment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senior.devrecruitment.service.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.senior.devrecruitment.service.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.service.mock.CandidateEntityServiceMockTest" />
+      <option name="METHOD_NAME" value="testeCenario05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario02" />
-      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario04" />
-      <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario05" />
-      <item itemvalue="JUnit.CandidaturaServiceMockTest.testeCenario001" />
-      <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
+      <item itemvalue="Application.RunApplication" />
+      <item itemvalue="JUnit.CandidacyEntityServiceMockTest.testeCenario001" />
+      <item itemvalue="JUnit.CandidateEntityRepositoryTest.findTecnologiasByIdCandidato" />
+      <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario02" />
+      <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario04" />
+      <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario05" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CandidatoRepositoryTest.findTecnologiasByIdCandidato" />
-        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario04" />
-        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario05" />
-        <item itemvalue="JUnit.CandidaturaServiceMockTest.testeCenario001" />
-        <item itemvalue="JUnit.CandidatoServiceMockTest.testeCenario02" />
+        <item itemvalue="JUnit.CandidateEntityRepositoryTest.findTecnologiasByIdCandidato" />
+        <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario04" />
+        <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario05" />
+        <item itemvalue="JUnit.CandidacyEntityServiceMockTest.testeCenario001" />
+        <item itemvalue="JUnit.CandidateEntityServiceMockTest.testeCenario02" />
       </list>
     </recent_temporary>
   </component>
@@ -301,38 +407,6 @@
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java</url>
-          <line>40</line>
-          <properties class="com.senior.devrecruitment.service.mock.CandidaturaServiceMockTest" method="testeCenario001">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidaturaService.java</url>
-          <line>30</line>
-          <properties class="com.senior.devrecruitment.service.CandidaturaService" method="realizarCandidatura">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidatoService.java</url>
-          <line>46</line>
-          <properties class="com.senior.devrecruitment.service.CandidatoService" method="verificarSeCandidatoEstaInativo">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
