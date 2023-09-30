@@ -1,6 +1,6 @@
 
 # dev_recruitment
-Projeto para futuros ou já experientes devs realizarem as suas candidaturas em vagas baseadas nos seus conhecimentos técnicos, constando com diversas validações para que você ache a vaga ideal de acordo com suas skills
+Projeto para futuros ou já experientes devs realizarem as suas candidaturas em vagas baseadas nos seus conhecimentos técnicos, constando com diversas validações para que você ache a vacancyEntity ideal de acordo com suas skills
 ## Tecnologias usadas
 
 - Linguagem: Java
