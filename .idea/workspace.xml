@@ -5,106 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66c16a00-03cc-4a36-a56d-144447fef67e" name="Changes" comment="Implementação dos primeiros testes do controller">
-      <change afterPath="$PROJECT_DIR$/.idea/Dev_recruitment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_recruitment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V20230930004845__create-tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidateEntityRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/CandidateEntityServiceJTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidacyEntityServiceMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidacy/Candidacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidacy/CandidacyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidate/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidate/CandidateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidate/CandidateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/technology/Technology.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/technology/TechnologyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/technology/TechnologyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/vacancy/Vacancy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/vacancy/VacancyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V20231006184846__create-tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/repository/CandidateEntityRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/service/CandidateServiceJTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/service/mock/CandidacyServiceMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/service/mock/CandidateServiceMockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidacyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/TecnologiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/TechnologyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/VagaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/VacancyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/Candidato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/DTO/DTOCandidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidato/DTO/DTOListagemCandidatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOListCandidates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidatura/Candidatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidatura/DTO/DTOCandidatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/DTO/DTOCandidacy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/DTO/DTOListagemTecnologia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOListTechnologies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/DTO/DTOTecnologia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOTechnology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/tecnologia/Tecnologia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/DTO/DTOListagemVagas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOListVacancies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/DTO/DTOVaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOVacancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vaga/Vaga.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/AreaAconselhavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Linguagens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/NecessidadeVaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/PerformanceArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/DTOErros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/Exceptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/NotCompatibleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/CandidaturaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/projection/TecnologiaProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/CandidatoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/CandidaturaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/TecnologiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/repository/VagaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidatoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/CandidaturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/TecnologiaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/service/VagaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create-tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/controller/CandidatoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/controller/CandidateEntityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidatoRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/CandidatoServiceJTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidateEntityServiceMockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/DevRecruitmentApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidatoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidaturaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/TecnologiaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/VagaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/Candidato$CandidatoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/Candidato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/DTO/DTOCandidato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidato/DTO/DTOListagemCandidatos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/Candidatura$CandidaturaBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/Candidatura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidatura/DTO/DTOCandidatura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/DTO/DTOListagemTecnologia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/DTO/DTOTecnologia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/Tecnologia$TecnologiaBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/tecnologia/Tecnologia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/DTO/DTOListagemVagas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/DTO/DTOVaga.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/Vaga$VagaBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vaga/Vaga.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/AreaAconselhavel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/Framework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/Linguagens.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/NecessidadeVaga.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/DTOErroValidacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/Exceptions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/NotCompatibleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/projection/CandidaturaProjection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/projection/TecnologiaProjection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/CandidatoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/CandidaturaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/TecnologiaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/repository/VagaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/security/DTOToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/CandidatoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/CandidaturaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/TecnologiaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/service/VagaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create-tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/DevRecruitmentApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/controller/CandidatoControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/repository/CandidatoRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/CandidatoServiceJTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/mock/CandidatoServiceMockTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senior/devrecruitment/service/mock/CandidaturaServiceMockTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/DevRecruitmentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/DevRecruitmentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidacyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/CandidateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/TechnologyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/controller/VacancyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyProjection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/candidacy/CandidacyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/CandidacyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidacy/DTO/DTOCandidacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/CandidateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOCandidate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/candidate/DTO/DTOListCandidates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOListTechnologies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/DTO/DTOTechnology.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyProjection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/technology/TechnologyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOListVacancies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/DTO/DTOVacancy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/vacancy/VacancyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/entities/vacancy/VacancyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/enums/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/enums/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/enums/PerformanceArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devrecruitment/enums/PerformanceArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senior/devrecruitment/security/DTOToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V20230930004845__create-tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/DevRecruitmentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DevRecruitmentApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/controller/CandidateEntityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/controller/CandidateControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/repository/CandidateEntityRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/CandidateEntityServiceJTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidacyEntityServiceMockTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/senior/devrecruitment/service/mock/CandidateEntityServiceMockTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidacyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/CandidateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/TechnologyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/controller/VacancyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidacy/CandidacyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidacy/CandidacyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidate/CandidateRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidate/CandidateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/candidate/DTO/DTOListCandidates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/technology/DTO/DTOListTechnologies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/technology/DTO/DTOTechnology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/technology/TechnologyProjection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/technology/TechnologyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/technology/TechnologyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vacancy/DTO/DTOListVacancies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vacancy/VacancyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/entities/vacancy/VacancyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/senior/devrecruitment/enums/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V20230930004845__create-tables.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,8 +94,8 @@
         <option value="Record" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -162,25 +139,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;discover&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace/Dev_recruitment&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "feature/queries",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/workspace/Dev_recruitment/src/main/java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\Dev_recruitment\src\main\java" />
+      <recent name="C:\workspace\Dev_recruitment\src\main\java\com\senior\devrecruitment" />
       <recent name="C:\workspace\godev-maio-2023\Dev recruitment\src\main\resources" />
       <recent name="C:\Users\joao.emboaba\Documents\dev_recruitment\src\main\resources\db\migration" />
       <recent name="C:\Users\joao.emboaba\Documents\dev_recruitment\src\main\resources\db\migrations" />
@@ -198,7 +177,7 @@
   </component>
   <component name="RunManager" selected="Application.RunApplication">
     <configuration name="RunApplication" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.senior.devrecruitment.DevRecruitmentApplication" />
+      <option name="MAIN_CLASS_NAME" value="devrecruitment.DevRecruitmentApplication" />
       <module name="dev_recruitment" />
       <method v="2">
         <option name="Make" enabled="true" />
